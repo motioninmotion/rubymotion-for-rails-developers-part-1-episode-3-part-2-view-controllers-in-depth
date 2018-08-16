@@ -29,7 +29,7 @@ class MainViewController < UIViewController
     @button.addTarget(self, action: :add_task, forControlEvents: UIControlEventTouchUpInside)
   end
 
-  def viewWillAppear(animated)
+  def viewWillAppear(_)
     @label.text = task.title
   end
 
