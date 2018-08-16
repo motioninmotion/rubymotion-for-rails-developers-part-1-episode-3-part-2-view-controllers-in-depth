@@ -13,7 +13,7 @@ class AddTaskViewController < UIViewController
     view.addSubview(@text_field)
   end
 
-  def viewWillDisappear(animated)
+  def viewWillDisappear(_)
     task.title = @text_field.text
   end
 end
